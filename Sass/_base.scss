@@ -1,0 +1,37 @@
+:root {
+  --default-font: "Outfit", sans-serif;
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --main-very-dark-blue: hsl(217, 54%, 11%);
+  --card-very-dark-blue: hsl(216, 50%, 16%);
+  --line-very-dark-blue: hsl(215, 32%, 27%);
+}
+
+body {
+  background-color: var(--main-very-dark-blue);
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 30%;
+    margin: 0 auto;
+    background-color: var(--card-very-dark-blue);
+  }
+
+  img {
+    width: 100%;
+  }
+}
