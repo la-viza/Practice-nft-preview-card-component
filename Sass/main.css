@@ -42,31 +42,31 @@ main .card {
       -ms-flex-align: center;
           align-items: center;
   min-height: 50vh;
-  width: 30%;
-  margin: 0 auto;
+  width: 21%;
+  margin: 0;
   background-color: var(--card-very-dark-blue);
   border-radius: 7px;
 }
 
 main .card__section {
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 main .card__text h1 {
   color: var(--white);
   font-family: var(--default-font);
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 main .card__text .content {
   color: var(--soft-blue);
   font-family: var(--default-font);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 main img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 /*# sourceMappingURL=main.css.map */
