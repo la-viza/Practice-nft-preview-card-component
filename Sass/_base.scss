@@ -29,9 +29,30 @@ main {
     width: 30%;
     margin: 0 auto;
     background-color: var(--card-very-dark-blue);
+    border-radius: 7px;
+
+    &__section {
+      padding: 1rem;
+    }
+
+    &__text {
+      h1 {
+        color: var(--white);
+        font-family: var(--default-font);
+        font-size: 0.9rem;
+      }
+
+      .content {
+        color: var(--soft-blue);
+        font-family: var(--default-font);
+        font-size: 0.7rem;
+        font-weight: 300;
+      }
+    }
   }
 
   img {
     width: 100%;
+    border-radius: 5px;
   }
 }

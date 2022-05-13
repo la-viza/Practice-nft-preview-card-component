@@ -45,9 +45,28 @@ main .card {
   width: 30%;
   margin: 0 auto;
   background-color: var(--card-very-dark-blue);
+  border-radius: 7px;
+}
+
+main .card__section {
+  padding: 1rem;
+}
+
+main .card__text h1 {
+  color: var(--white);
+  font-family: var(--default-font);
+  font-size: 0.9rem;
+}
+
+main .card__text .content {
+  color: var(--soft-blue);
+  font-family: var(--default-font);
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 
 main img {
   width: 100%;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */
