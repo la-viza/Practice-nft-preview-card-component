@@ -42,7 +42,7 @@ main .card {
       -ms-flex-align: center;
           align-items: center;
   min-height: 50vh;
-  width: 21%;
+  width: 25%;
   margin: 0;
   background-color: var(--card-very-dark-blue);
   border-radius: 7px;
@@ -65,7 +65,37 @@ main .card__text .content {
   font-weight: 300;
 }
 
-main img {
+main .card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: var(--default-font);
+}
+
+main .card__info span.index {
+  color: var(--cyan);
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .card__info span.days-qty {
+  color: var(--soft-blue);
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .card img {
   width: 100%;
   border-radius: 6px;
 }
