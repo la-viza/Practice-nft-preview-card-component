@@ -14,7 +14,7 @@ body {
 
 main {
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    height: 50%;
     width: 25%;
     margin: 0;
     background-color: var(--card-very-dark-blue);
@@ -34,12 +34,17 @@ main {
     &__section {
       padding: 1.2rem;
     }
+    &__img {
+      width: 100%;
+      border-radius: 6px;
+    }
 
     &__text {
       h1 {
         color: var(--white);
         font-family: var(--default-font);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        padding-top: 0.7rem;
       }
 
       .content {
@@ -47,33 +52,60 @@ main {
         font-family: var(--default-font);
         font-size: 1rem;
         font-weight: 300;
+        padding: 0.4rem 0 0.7rem;
       }
     }
 
     &__info {
       display: flex;
       justify-content: space-between;
-      align-content: center;
       font-family: var(--default-font);
 
       span.index {
         color: var(--cyan);
         font-weight: 600;
-        display: flex;
       }
 
       span.days-qty {
         color: var(--soft-blue);
         font-weight: 300;
-
-        display: flex;
-        justify-content: space-around;
+      }
+      svg {
+        display: inline-block;
+        margin: 0 3px -2px;
       }
     }
 
-    img {
-      width: 100%;
-      border-radius: 6px;
+    &__credits {
+      padding: 1.1rem 0 0.7rem;
+      color: var(--soft-blue);
+      font-family: var(--default-font);
+      font-size: 1rem;
+      font-weight: 300;
+
+      .footer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      hr.line {
+        border: 0.5px solid var(--line-very-dark-blue);
+        margin-bottom: 1rem;
+      }
+
+      img.user {
+        display: inline-block;
+        width: 15%;
+        border: 1px solid var(--white);
+        border-radius: 50%;
+        margin-right: 0.8rem;
+      }
+      a {
+        color: var(--white);
+        text-decoration: none;
+        padding: 0 0.5rem;
+      }
     }
   }
 }

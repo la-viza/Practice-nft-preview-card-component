@@ -14,7 +14,7 @@ body {
 
 main {
   min-height: 100vh;
-  width: 100%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +41,7 @@ main .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 50vh;
+  height: 50%;
   width: 25%;
   margin: 0;
   background-color: var(--card-very-dark-blue);
@@ -52,10 +52,16 @@ main .card__section {
   padding: 1.2rem;
 }
 
+main .card__img {
+  width: 100%;
+  border-radius: 6px;
+}
+
 main .card__text h1 {
   color: var(--white);
   font-family: var(--default-font);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
 }
 
 main .card__text .content {
@@ -63,6 +69,7 @@ main .card__text .content {
   font-family: var(--default-font);
   font-size: 1rem;
   font-weight: 300;
+  padding: 0.4rem 0 0.7rem;
 }
 
 main .card__info {
@@ -72,31 +79,60 @@ main .card__info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
   font-family: var(--default-font);
 }
 
 main .card__info span.index {
   color: var(--cyan);
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 main .card__info span.days-qty {
   color: var(--soft-blue);
   font-weight: 300;
+}
+
+main .card__info svg {
+  display: inline-block;
+  margin: 0 3px -2px;
+}
+
+main .card__credits {
+  padding: 1.1rem 0 0.7rem;
+  color: var(--soft-blue);
+  font-family: var(--default-font);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+main .card__credits .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .card img {
-  width: 100%;
-  border-radius: 6px;
+main .card__credits hr.line {
+  border: 0.5px solid var(--line-very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+main .card__credits img.user {
+  display: inline-block;
+  width: 15%;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+
+main .card__credits a {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
