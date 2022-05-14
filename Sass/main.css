@@ -135,4 +135,16 @@ main .card__credits a {
   text-decoration: none;
   padding: 0 0.5rem;
 }
+
+.signature {
+  color: var(--soft-blue);
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+}
+
+.signature__links {
+  color: var(--white);
+  text-decoration: none;
+}
 /*# sourceMappingURL=main.css.map */

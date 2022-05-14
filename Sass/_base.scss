@@ -109,3 +109,14 @@ main {
     }
   }
 }
+.signature {
+  color: var(--soft-blue);
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: var(--default-font);
+
+  &__links {
+    color: var(--white);
+    text-decoration: none;
+  }
+}
