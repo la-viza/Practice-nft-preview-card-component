@@ -57,6 +57,16 @@ main .card__section__active {
   width: 100%;
 }
 
+main .card__section__active:hover .card__section__active__img {
+  opacity: 0.9;
+  z-index: -1;
+  cursor: pointer;
+}
+
+main .card__section__active:hover .middle {
+  opacity: 2;
+}
+
 main .card__section__active__img {
   opacity: 1;
   display: block;
@@ -67,14 +77,6 @@ main .card__section__active__img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 6px;
-}
-
-main .card__section__active__img:hover {
-  opacity: 0.7;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(red));
-  background-image: linear-gradient(red);
-  background-size: cover;
-  z-index: -1;
 }
 
 main .card__section .middle {
@@ -88,11 +90,6 @@ main .card__section .middle {
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-main .card__section .middle:hover {
-  opacity: 1;
-  cursor: pointer;
 }
 
 main .card__section .text {
