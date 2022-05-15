@@ -33,10 +33,51 @@ main {
 
     &__section {
       padding: 1.2rem;
-    }
-    &__img {
-      width: 100%;
-      border-radius: 6px;
+
+      &__active {
+        //container
+        position: relative;
+        width: 100%;
+
+        &:hover,
+        &__img {
+          opacity: 0.3;
+        }
+
+        &:hover,
+        .middle {
+          opacity: 1;
+        }
+
+        &__img {
+          //image
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: 0.5s ease;
+          backface-visibility: hidden;
+          border-radius: 6px;
+        }
+      }
+
+      .middle {
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .text {
+        background-color: #04aa6d;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
     }
 
     &__text {

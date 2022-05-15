@@ -52,9 +52,50 @@ main .card__section {
   padding: 1.2rem;
 }
 
-main .card__img {
+main .card__section__active {
+  position: relative;
   width: 100%;
+}
+
+main .card__section__active:hover, main .card__section__active__img {
+  opacity: 0.3;
+}
+
+main .card__section__active:hover,
+main .card__section__active .middle {
+  opacity: 1;
+}
+
+main .card__section__active__img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 6px;
+}
+
+main .card__section .middle {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main .card__section .text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
 
 main .card__text h1 a {
