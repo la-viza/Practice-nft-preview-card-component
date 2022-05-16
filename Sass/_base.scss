@@ -39,43 +39,45 @@ main {
         position: relative;
         width: 100%;
 
-        &:hover .card__section__active__img {
-          opacity: 0.9;
-          z-index: -1;
-          cursor: pointer;
-        }
-
-        &:hover .middle {
-          opacity: 2;
-        }
-
-        &__img {
+        img {
           //image
-          opacity: 1;
+
           display: block;
           width: 100%;
           height: auto;
-          transition: 0.5s ease;
-          backface-visibility: hidden;
-          border-radius: 6px;
         }
-      }
 
-      .middle {
-        transition: 0.5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-      }
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: var(--cyan);
+        }
 
-      .text {
-        background-color: transparent;
-        color: var(--cyan);
-        font-size: 1rem;
+        &:hover .overlay {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+
+        .icon {
+          display: inline-block;
+          fill: none;
+          color: white;
+          font-size: 2rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
       }
     }
 
