@@ -79,6 +79,7 @@ main {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           text-align: center;
+          padding: 5rem;
 
           &:hover {
             opacity: 1;
@@ -183,5 +184,10 @@ main {
   &__links {
     color: var(--white);
     text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      color: var(--cyan);
+    }
   }
 }

@@ -96,6 +96,7 @@ main .card__section__active .icon {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 5rem;
 }
 
 main .card__section__active .icon:hover {
@@ -208,5 +209,10 @@ main .card__credits a :active {
 .signature__links {
   color: var(--white);
   text-decoration: none;
+}
+
+.signature__links:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 /*# sourceMappingURL=main.css.map */
