@@ -61,6 +61,7 @@ main .card__section__active img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 main .card__section__active .overlay {
@@ -80,9 +81,11 @@ main .card__section__active .overlay {
 main .card__section__active:hover .overlay {
   opacity: 0.5;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 main .card__section__active .icon {
+  opacity: 0;
   display: inline-block;
   fill: none;
   color: white;
@@ -93,6 +96,11 @@ main .card__section__active .icon {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+main .card__section__active .icon:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 main .card__text h1 a {

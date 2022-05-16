@@ -41,10 +41,10 @@ main {
 
         img {
           //image
-
           display: block;
           width: 100%;
           height: auto;
+          border-radius: 5px;
         }
 
         .overlay {
@@ -63,9 +63,11 @@ main {
         &:hover .overlay {
           opacity: 0.5;
           cursor: pointer;
+          border-radius: 5px;
         }
 
         .icon {
+          opacity: 0;
           display: inline-block;
           fill: none;
           color: white;
@@ -77,6 +79,11 @@ main {
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           text-align: center;
+
+          &:hover {
+            opacity: 1;
+            cursor: pointer;
+          }
         }
       }
     }
