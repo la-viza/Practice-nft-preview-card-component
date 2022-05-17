@@ -8,6 +8,12 @@
   --line-very-dark-blue: hsl(215, 32%, 27%);
 }
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
 body {
   background-color: var(--main-very-dark-blue);
 }
@@ -20,6 +26,10 @@ main {
   align-items: center;
   margin: 0 auto;
 
+  @media only screen and (max-width: $bp-small) {
+    min-height: 50vh;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -31,8 +41,18 @@ main {
     background-color: var(--card-very-dark-blue);
     border-radius: 7px;
 
+    @media only screen and (max-width: $bp-small) {
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+    }
+
     &__section {
       padding: 1.2rem;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 2rem;
+      }
 
       &__active {
         //container
@@ -45,6 +65,12 @@ main {
           width: 100%;
           height: auto;
           border-radius: 5px;
+
+          @media only screen and (max-width: $bp-small) {
+            min-width: 30%;
+            min-height: 30%;
+            border-radius: 10px;
+          }
         }
 
         .overlay {
@@ -64,6 +90,10 @@ main {
           opacity: 0.5;
           cursor: pointer;
           border-radius: 5px;
+
+          @media only screen and (max-width: $bp-small) {
+            border-radius: 10px;
+          }
         }
 
         .icon {
@@ -98,6 +128,10 @@ main {
         text-decoration: none;
         cursor: pointer;
 
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.5rem;
+        }
+
         &:hover,
         :active {
           text-decoration: none;
@@ -112,6 +146,10 @@ main {
         font-size: 1rem;
         font-weight: 300;
         padding: 0.4rem 0 0.7rem;
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -128,10 +166,18 @@ main {
       span.days-qty {
         color: var(--soft-blue);
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.2rem;
+        }
       }
       svg {
         display: inline-block;
         margin: 0 3px -2px;
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -142,6 +188,10 @@ main {
       font-size: 1rem;
       font-weight: 300;
 
+      @media only screen and (max-width: $bp-small) {
+        font-size: 1.1rem;
+      }
+
       .footer {
         display: flex;
         justify-content: start;
@@ -151,6 +201,10 @@ main {
       hr.line {
         border: 0.5px solid var(--line-very-dark-blue);
         margin-bottom: 1rem;
+
+        @media only screen and (max-width: $bp-small) {
+          margin-bottom: 1.5rem;
+        }
       }
 
       img.user {
@@ -159,6 +213,10 @@ main {
         border: 1px solid var(--white);
         border-radius: 50%;
         margin-right: 0.8rem;
+
+        @media only screen and (max-width: $bp-small) {
+          width: 10%;
+        }
       }
       a {
         color: var(--white);
@@ -180,6 +238,10 @@ main {
   text-align: center;
   font-size: 0.7rem;
   font-family: var(--default-font);
+
+  @media only screen and (max-width: $bp-small) {
+    padding-top: 1rem;
+  }
 
   &__links {
     color: var(--white);

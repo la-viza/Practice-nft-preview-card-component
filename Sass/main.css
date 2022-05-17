@@ -27,6 +27,12 @@ main {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main {
+    min-height: 50vh;
+  }
+}
+
 main .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,8 +54,22 @@ main .card {
   border-radius: 7px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main .card {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+
 main .card__section {
   padding: 1.2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__section {
+    padding: 2rem;
+  }
 }
 
 main .card__section__active {
@@ -62,6 +82,14 @@ main .card__section__active img {
   width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__section__active img {
+    min-width: 30%;
+    min-height: 30%;
+    border-radius: 10px;
+  }
 }
 
 main .card__section__active .overlay {
@@ -82,6 +110,12 @@ main .card__section__active:hover .overlay {
   opacity: 0.5;
   cursor: pointer;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__section__active:hover .overlay {
+    border-radius: 10px;
+  }
 }
 
 main .card__section__active .icon {
@@ -113,6 +147,12 @@ main .card__text h1 a {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main .card__text h1 a {
+    font-size: 1.5rem;
+  }
+}
+
 main .card__text h1 a:hover,
 main .card__text h1 a :active {
   text-decoration: none;
@@ -126,6 +166,12 @@ main .card__text .content {
   font-size: 1rem;
   font-weight: 300;
   padding: 0.4rem 0 0.7rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__text .content {
+    font-size: 1.5rem;
+  }
 }
 
 main .card__info {
@@ -148,9 +194,21 @@ main .card__info span.days-qty {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main .card__info span.days-qty {
+    font-size: 1.2rem;
+  }
+}
+
 main .card__info svg {
   display: inline-block;
   margin: 0 3px -2px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__info svg {
+    font-size: 1.5rem;
+  }
 }
 
 main .card__credits {
@@ -159,6 +217,12 @@ main .card__credits {
   font-family: var(--default-font);
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__credits {
+    font-size: 1.1rem;
+  }
 }
 
 main .card__credits .footer {
@@ -178,12 +242,24 @@ main .card__credits hr.line {
   margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  main .card__credits hr.line {
+    margin-bottom: 1.5rem;
+  }
+}
+
 main .card__credits img.user {
   display: inline-block;
   width: 15%;
   border: 1px solid var(--white);
   border-radius: 50%;
   margin-right: 0.8rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  main .card__credits img.user {
+    width: 10%;
+  }
 }
 
 main .card__credits a {
@@ -204,6 +280,12 @@ main .card__credits a :active {
   text-align: center;
   font-size: 0.7rem;
   font-family: var(--default-font);
+}
+
+@media only screen and (max-width: 37.5em) {
+  .signature {
+    padding-top: 1rem;
+  }
 }
 
 .signature__links {
