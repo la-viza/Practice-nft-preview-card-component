@@ -9,7 +9,7 @@
 }
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1200px
+$bp-largest: 81.25em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;
 $bp-small: 37.5em; // 600px;
@@ -37,6 +37,17 @@ main {
     background-color: var(--card-very-dark-blue);
     border-radius: 7px;
 
+    @media only screen and (max-width: $bp-largest) {
+      height: 70%;
+      width: 40%;
+      border-radius: 15px;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 70%;
+      width: 50%;
+      border-radius: 15px;
+    }
     @media only screen and (max-width: $bp-small) {
       max-height: 80%;
       width: 100%;
@@ -185,8 +196,8 @@ main {
       font-size: 1rem;
       font-weight: 300;
 
-      @media only screen and (max-width: $bp-small) {
-        font-size: 1.1rem;
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 0.9rem;
       }
 
       .footer {
